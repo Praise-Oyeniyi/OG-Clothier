@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+
+
+@layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 2px white;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px white;
+  }
+  *{
+    font-family: 'Arimo', sans-serif;
+  }
+}
+@layer components {
+  *{
+      @apply p-0 m-0 box-border scroll-smooth;
+  }
+  .flex-center{
+    @apply flex justify-center items-center w-full;
+  }
+  .flex-column{
+    @apply flex-center flex-col;
+  }
+  .nav-links{
+    @apply w-full flex justify-center items-center h-full font-semibold sm:text-lg text-base hover:scale-110 uppercase;
+  }
+  .nav-side-b{
+    @apply border-x border-l-black nav-links;
+  }
+
+
+
+
+  .banner-bg{
+    @apply bg-[url('../../public/Images/hero-image.png')] bg-cover;
+  }
+  .reel{
+    @apply flex-center leading-tight mx-auto bg-white text-l-black w-24 h-24 rounded-full text-xl font-medium mt-5 hover:bg-l-black hover:text-white ease-linear transition-all;
+  }
+  .banner-header{
+    @apply uppercase sm:text-8xl text-6xl text-center font-semibold text-white tracking-wide lg:tracking-wider;
+  }
+  
+  /* arrival css */
+  .arrival-animate{
+    @apply border-l-black h-32 w-32 rounded-full flex-column  sm:flex gap-y-3 absolute right-0 lg:top-64 top-56 hidden;
+  }
+  
+
+  .ani{
+    @apply transition-all ease-in bg-no-repeat;
+  }
+
+  .c-1{
+    @apply bg-[url('../../public/Images/collection1.svg')] bg-cover bg-center ani;
+  }
+  .c-2{
+    @apply bg-[url('../../public/Images/collection2.svg')] bg-cover bg-center ani;
+  }
+  .c-3{
+    @apply bg-[url('../../public/Images/collection3.svg')] bg-cover bg-center ani;
+  }
+
+  .slider-inner {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .slider-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+  /* slide banner */
+  .clothier-slide{
+    @apply h-64 w-64 rounded-full uppercase  text-white flex-center text-5xl font-bold tracking-tighter;
+  }
+  .clothier-s-text{
+    @apply text-[10rem] font-bold tracking-tighter leading-[1.1em] font-outline-2 relative whitespace-nowrap;
+  }
+
+
+
+
+  /* footer */
+  .link-head{
+    @apply underline text-xl font-semibold tracking-wide;
+  }
+  .links-box{
+    @apply space-y-3 text-base font-medium cursor-pointer;
+  }
+  .link-container{
+    @apply pt-10 md:px-4 lg:px-7 space-y-4 h-full w-full;
+  }
+}
+
