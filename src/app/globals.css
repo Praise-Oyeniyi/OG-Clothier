@@ -35,11 +35,14 @@
 
 
 
-  .banner-bg{
+  .banner-bg1{
     @apply bg-[url('../../public/Images/hero-image.png')] bg-cover;
   }
+  .banner-bg2{
+    @apply bg-[url('../../public/Images/Bg2.gif')] bg-cover;
+  }
   .reel{
-    @apply flex-center leading-tight mx-auto bg-white text-l-black w-24 h-24 rounded-full text-xl font-medium mt-5 hover:bg-l-black hover:text-white ease-linear transition-all;
+    @apply flex-center relative leading-6 mx-auto bg-white text-l-black w-24 h-24 rounded-full text-xl font-semibold tracking-wide mt-5 hover:bg-l-black hover:text-white;
   }
   .banner-header{
     @apply uppercase sm:text-8xl text-6xl text-center font-semibold text-white tracking-wide lg:tracking-wider;
